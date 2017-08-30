@@ -1,0 +1,1 @@
+szmyks.github.io
