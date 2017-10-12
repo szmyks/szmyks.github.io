@@ -10,37 +10,80 @@
     <body>
         <div class="container">
             <h1>Listy Przebojów v1.0.0</h1>
-            <h3>Program do zarządzania listami przebojów wykonany dla Radia Koszalin</h3>
+            <h3>Program do zarządzania listami przebojów</h3>
 
             <hr>
 
-            <h4>POBIERANIE</h4>
-            <a href="#" download>
-                <button type="button" class="btn download-windows">
-                    <i class="fa fa-windows" aria-hidden="true"></i>                        
-                    Windows <br>
-                    <span class="float-right">wersja APLHA v1.0.0</span>
-                </button>
-            </a>
-
+            <div class="row">
+                <div class="col">
+                    <h4>POBIERANIE</h4>
+                    <a href="builds/listy_przebojow-v1.0.0-win32-x64.zip" download>
+                        <button type="button" class="btn download-windows">
+                            <i class="fa fa-windows" aria-hidden="true"></i>                        
+                            Windows <br>
+                            <span class="float-right">wersja APLHA v1.0.0</span>
+                        </button>
+                    </a>
+        
+                    <a href="builds/listy_przebojow-v1.0.0-linux-x64.zip" download>
+                        <button type="button" class="btn download-linux">
+                            <i class="fa fa-linux" aria-hidden="true"></i>                        
+                            Linux <br>
+                            <span class="float-right">wersja APLHA v1.0.0</span>
+                        </button>
+                    </a>
+                </div>
+                <div class="col">
+                    <h4>WYMAGANE</h4>
+                    <a href="builds/lists-v1.0.0.zip" download>
+                        <button type="button" class="btn download-others">
+                            <i class="fa fa-list" aria-hidden="true"></i>                        
+                            Listy inicjalizacyjne <br>
+                            <span class="float-right">wersja APLHA v1.0.0</span>
+                        </button>
+                    </a><br>
+                    <span>Uruchomić program, wyłączyć. Rozpakować i wgrać do folderu z dokumentami, a potem do folderu ListyPrzebojow</span>
+                </div>
+            </div>
+            
             <hr>
 
-            <h4>CHANGELOG <small class="text-muted">Czyli co się zmieniło z wersji na wersję</small></h4>
-
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Wersja</th>
-                        <th>Zmiana</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1.0.0</td>
-                        <td>Pierwsza, działająca wersja programu</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="row">
+                <div class="col">
+                    <h4>CHANGELOG <small class="text-muted">Czyli co się zmieniło z wersji na wersję</small></h4>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Wersja</th>
+                                <th>Zmiana</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1.0.0</td>
+                                <td>Pierwsza, działająca wersja programu</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col">
+                    <h4>PROBLEMY <small class="text-muted">Czyli to co sprawia problemy w poszczególnej wersji programu</small></h4>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Wersja</th>
+                                <th>Problem</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1.0.0</td>
+                                <td>Problem z konwersją do pdf przy produkcyjnej wersji programu</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </body>
     <style>
@@ -60,8 +103,24 @@
             margin-bottom: 50px;
         }
 
-        button.download-windows>span {
+        button>span {
             font-size: 18px;
+        }
+
+        button.download-linux {
+            font-size: 35px;
+            color: #fff;
+            padding: 20px;
+            background: #00d839;
+            margin-bottom: 50px;
+        }
+
+        button.download-others {
+            font-size: 35px;
+            color: #fff;
+            padding: 20px;
+            background: #4c4c4c;
+            margin-bottom: 50px;
         }
 
         table.table {
