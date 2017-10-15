@@ -21,7 +21,7 @@
                         <button type="button" class="btn download-windows">
                             <i class="fa fa-windows" aria-hidden="true"></i>                        
                             Windows <br>
-                            <span class="float-right">wersja APLHA v1.0.1</span>
+                            <span class="float-right">wersja APLHA v1.0.2</span>
                         </button>
                     </a>
         
@@ -29,7 +29,7 @@
                         <button type="button" class="btn download-linux">
                             <i class="fa fa-linux" aria-hidden="true"></i>                        
                             Linux <br>
-                            <span class="float-right">wersja APLHA v1.0.0</span>
+                            <span class="float-right">wersja APLHA v1.0.2</span>
                         </button>
                     </a>
                 </div>
@@ -43,6 +43,14 @@
                         </button>
                     </a><br>
                     <span>Uruchomić program, wyłączyć. Rozpakować i wgrać do folderu z dokumentami, a potem do folderu ListyPrzebojow/lists/</span>
+                    <a href="https://wkhtmltopdf.org/downloads.html" target="_blank" download>
+                        <button type="button" class="btn download-others">
+                            <i class="fa fa-refresh" aria-hidden="true"></i>                        
+                            Konwerter PDF <br>
+                            <span class="float-right">wersja APLHA v1.0.0</span>
+                        </button>
+                    </a><br>
+                    <span>Zaintalować, odpalić CMD, wywołać komendę <code>setx PATH "%PATH%;C:\\Program Files\\wkhtmltopdf\\bin"</code></span>
                 </div>
             </div>
             
@@ -66,6 +74,10 @@
                             <tr>
                                 <td>1.0.1</td>
                                 <td>Na czas pracy nad łatką, konwersja do PDF zastąpiona konwersją do HTML</td>
+                            </tr>
+                            <tr>
+                                <td>1.0.2</td>
+                                <td>Działające konwertowanie do PDF, wymagana zależność</td>
                             </tr>
                         </tbody>
                     </table>
@@ -97,6 +109,7 @@
 
         h4 {
             margin-top: 50px;
+            margin-bottom: 20px;
         }
 
         button.download-windows {
@@ -124,7 +137,7 @@
             color: #fff;
             padding: 20px;
             background: #4c4c4c;
-            margin-bottom: 50px;
+            margin-bottom: 20px;
         }
 
         table.table {
